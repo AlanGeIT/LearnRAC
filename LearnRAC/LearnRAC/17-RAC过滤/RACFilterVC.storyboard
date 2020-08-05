@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--FilterVC-->
+        <scene sceneID="xI1-UW-Mcf">
+            <objects>
+                <viewController storyboardIdentifier="RACFilterVC" id="8Jl-rd-nq5" customClass="RACFilterVC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="l2R-Iw-IWc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eQE-sx-C6e">
+                                <rect key="frame" x="30" y="144" width="354" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="eQE-sx-C6e" firstAttribute="top" secondItem="5ad-8g-mH7" secondAttribute="top" constant="100" id="JUM-cD-pqV"/>
+                            <constraint firstItem="eQE-sx-C6e" firstAttribute="leading" secondItem="5ad-8g-mH7" secondAttribute="leading" constant="30" id="M26-bc-9yJ"/>
+                            <constraint firstItem="5ad-8g-mH7" firstAttribute="trailing" secondItem="eQE-sx-C6e" secondAttribute="trailing" constant="30" id="nHU-zf-Mho"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="5ad-8g-mH7"/>
+                    </view>
+                    <connections>
+                        <outlet property="textFiled" destination="eQE-sx-C6e" id="WZa-4h-iif"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TzI-8z-gNo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-39" y="110"/>
+        </scene>
+    </scenes>
+</document>

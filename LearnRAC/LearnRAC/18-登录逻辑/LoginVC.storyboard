@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--LoginVC-->
+        <scene sceneID="SHV-TW-XF5">
+            <objects>
+                <viewController storyboardIdentifier="LoginVC" id="ZxH-1i-WU1" customClass="LoginVC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zhX-5M-gwU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="账号" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nNa-nA-ZCz">
+                                <rect key="frame" x="40" y="144" width="334" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="YsB-1B-54Q"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="密码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pnX-A8-hff">
+                                <rect key="frame" x="40" y="224" width="334" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="CaJ-Rf-L9K"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VNA-p4-YCI">
+                                <rect key="frame" x="40" y="304" width="334" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="VVa-KQ-ovQ"/>
+                                </constraints>
+                                <state key="normal" title="登录"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="pnX-A8-hff" firstAttribute="leading" secondItem="qQ3-uA-okY" secondAttribute="leading" constant="40" id="7WB-eA-6wV"/>
+                            <constraint firstItem="qQ3-uA-okY" firstAttribute="trailing" secondItem="VNA-p4-YCI" secondAttribute="trailing" constant="40" id="IX2-ZQ-k65"/>
+                            <constraint firstItem="nNa-nA-ZCz" firstAttribute="top" secondItem="qQ3-uA-okY" secondAttribute="top" constant="100" id="U2P-MF-B8R"/>
+                            <constraint firstItem="VNA-p4-YCI" firstAttribute="top" secondItem="pnX-A8-hff" secondAttribute="bottom" constant="40" id="XFF-m3-Z7W"/>
+                            <constraint firstItem="qQ3-uA-okY" firstAttribute="trailing" secondItem="nNa-nA-ZCz" secondAttribute="trailing" constant="40" id="ZnL-au-jQc"/>
+                            <constraint firstItem="VNA-p4-YCI" firstAttribute="leading" secondItem="qQ3-uA-okY" secondAttribute="leading" constant="40" id="lCo-28-1m0"/>
+                            <constraint firstItem="pnX-A8-hff" firstAttribute="top" secondItem="nNa-nA-ZCz" secondAttribute="bottom" constant="40" id="p8o-Uc-OHu"/>
+                            <constraint firstItem="nNa-nA-ZCz" firstAttribute="leading" secondItem="qQ3-uA-okY" secondAttribute="leading" constant="40" id="pNS-ye-FEE"/>
+                            <constraint firstItem="qQ3-uA-okY" firstAttribute="trailing" secondItem="pnX-A8-hff" secondAttribute="trailing" constant="40" id="xgg-dS-fyW"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="qQ3-uA-okY"/>
+                    </view>
+                    <connections>
+                        <outlet property="accountFiled" destination="nNa-nA-ZCz" id="fOH-fJ-edh"/>
+                        <outlet property="loginBtn" destination="VNA-p4-YCI" id="mcn-zA-WUb"/>
+                        <outlet property="pwdFiled" destination="pnX-A8-hff" id="zja-tI-o8p"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fSa-Ak-yd8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-10" y="40"/>
+        </scene>
+    </scenes>
+</document>

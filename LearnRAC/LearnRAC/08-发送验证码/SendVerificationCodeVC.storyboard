@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Send Verification CodeVC-->
+        <scene sceneID="wKD-nh-PMB">
+            <objects>
+                <viewController storyboardIdentifier="SendVerificationCodeVC" id="vS9-w4-KjG" customClass="SendVerificationCodeVC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ehf-ir-of2">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="36z-6c-rBp">
+                                <rect key="frame" x="157" y="144" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="3RM-0n-Mc1"/>
+                                    <constraint firstAttribute="width" constant="100" id="fv5-vl-EDx"/>
+                                </constraints>
+                                <state key="normal" title="发送验证码"/>
+                                <connections>
+                                    <action selector="SendVerificationClick:" destination="vS9-w4-KjG" eventType="touchUpInside" id="tVr-zy-bnd"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="PxQ-19-PuJ">
+                                <rect key="frame" x="107" y="348" width="200" height="200"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="5ay-xb-OrD"/>
+                                    <constraint firstAttribute="height" constant="200" id="8lP-AR-DJp"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="PxQ-19-PuJ" firstAttribute="centerY" secondItem="ehf-ir-of2" secondAttribute="centerY" id="BOm-rg-O9Q"/>
+                            <constraint firstItem="36z-6c-rBp" firstAttribute="top" secondItem="ilc-rS-PzN" secondAttribute="top" constant="100" id="JgW-mA-WAd"/>
+                            <constraint firstItem="36z-6c-rBp" firstAttribute="centerX" secondItem="ehf-ir-of2" secondAttribute="centerX" id="RuP-AS-nFQ"/>
+                            <constraint firstItem="PxQ-19-PuJ" firstAttribute="centerX" secondItem="ehf-ir-of2" secondAttribute="centerX" id="YDJ-HS-idK"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ilc-rS-PzN"/>
+                    </view>
+                    <connections>
+                        <outlet property="sendVerificationBtn" destination="36z-6c-rBp" id="Y4T-67-hWw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Czt-r0-uqt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-149" y="99"/>
+        </scene>
+    </scenes>
+</document>
